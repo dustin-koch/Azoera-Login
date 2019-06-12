@@ -9,10 +9,20 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    //MARK: - Outlets
+    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
 
+    func setupUI() {
+        loginButton.rotate()
+        signupButton.rotate()
+    }
 
 }//END OF CLASS
